@@ -2,5 +2,7 @@
     <string name = "app_name">PrimerProyecto</string>
     <string name = "author">Ramiro Esquivel Durán</string>
     <string name = "Hola">Hola mundo</string>
+    <string name = "mensajes">Bienvenido a Android</string>
+    
     
 </resources>

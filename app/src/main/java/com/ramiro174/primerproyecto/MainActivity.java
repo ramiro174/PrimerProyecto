@@ -1,18 +1,45 @@
 package com.ramiro174.primerproyecto;
 
+import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.os.Handler;
+import android.os.Looper;
+import android.view.DragEvent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+public class MainActivity extends AppCompatActivity  implements View.OnClickListener {
+  
 
 
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    
+  
+    findViewById(R.id.btn1).setOnClickListener(this);
+    
+    findViewById(R.id.btn2).setOnClickListener(this);
+    findViewById(R.id.btn2).setOnClickListener(this);
+    
 
-public class MainActivity extends AppCompatActivity {
+ }
     
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public void onClick(View view) {
+      
+                Button  b=(Button ) view;
+                
+        
+        TextView  l=(TextView)  findViewById(R.id.lbl1);
+        l.setText( b.getText().toString());
+        
+        
+        
     }
-    
-    
 }

@@ -7,16 +7,113 @@
 	android:layout_height = "match_parent"
 	tools:context = ".MainActivity"
 	>
-	<TextView
-		android:layout_width = "350dp"
-		android:layout_height = "60dp"
-
-		android:text = "@string/Hola"
-		android:textSize = "20dp"
-		android:textAlignment="center"
-		/>
-	
+	<LinearLayout
+		android:layout_width = "match_parent"
+		android:layout_height = "match_parent"
+		android:orientation="vertical"
+		>
+		<LinearLayout
+			android:layout_width = "match_parent"
+			android:layout_height = "0dp"
+			android:layout_weight="2"
+			android:orientation="horizontal"
+			android:background="@color/mirojo">
+			
+			<TextView
+				android:layout_width = "match_parent"
+				android:layout_height = "wrap_content"
+				android:text="Bienvenido"
+				android:layout_gravity="center"
+				android:textColor="#FFF"
+				android:textSize="30dp"
+				android:textAlignment="center"
+				android:id="@+id/lbl1"
+				>
+				
+				
+			</TextView>
+			
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width = "match_parent"
+			android:layout_height = "0dp"
+			android:layout_weight="8"
+			android:background="@color/colorPrimary">
+			<FrameLayout
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent">
+				
+				<Button
+					android:layout_width = "wrap_content"
+					android:layout_height = "wrap_content"
+					android:text="@string/author"
+					android:layout_gravity="center">
+					
+				</Button>
+				
+				<RadioButton
+					android:layout_width = "wrap_content"
+					android:layout_height = "wrap_content"
+					android:text="mi radio"
+					android:textColor="#fff"
+					android:textSize="30dp"
+					android:layout_gravity="center_horizontal"
+					android:id="@+id/rd1"
+					android:onClick="onClick"
+					
+					></RadioButton>
+				
+			</FrameLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width = "match_parent"
+			android:layout_height = "0dp"
+			android:layout_weight="2"
+			android:orientation="horizontal"
+			android:background="@color/mirojo">
+			
+			<Button
+				android:layout_width = "0dp"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:text="bt1"
+				android:id="@+id/btn1"
+				android:onClick="elclick"
+				
+				>
+				
+			</Button>
+			<Button
+				android:layout_width = "0dp"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:text="bt2"
+				android:id="@+id/btn2"
+				android:onClick="elclick"
+				>
+				
+			</Button>
+			<Button
+				android:layout_width = "0dp"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:text="bt3"
+				android:id="@+id/btn3"
+				
+				
+				>
+				
+			</Button>
+			
+			
+		</LinearLayout>
 		
+		
+		
+		
+	</LinearLayout>
+	
+	
 	
 
   </RelativeLayout>
